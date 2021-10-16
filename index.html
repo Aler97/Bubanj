@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Bubanj</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="keys">
+        <button class="key qKey">
+          <audio id="sound1"></audio>
+          <h3>Q</h3>
+        </button>
+        <button class="key wKey">
+          <audio src="" id="sound2"></audio>
+          <h3>W</h3>
+        </button>
+        <button class="key eKey">
+          <audio src="" id="sound3"></audio>
+          <h3>E</h3>
+        </button>
+        <button class="key aKey">
+          <audio src="" id="sound4"></audio>
+          <h3>A</h3>
+        </button>
+        <button class="key sKey">
+          <audio src="" id="sound5"></audio>
+          <h3>S</h3>
+        </button>
+        <button class="key dKey">
+          <audio src="" id="sound6"></audio>
+          <h3>D</h3>
+        </button>
+        <button class="key zKey">
+          <audio src="" id="sound7"></audio>
+          <h3>Z</h3>
+        </button>
+        <button class="key xKey">
+          <audio src="" id="sound8"></audio>
+          <h3>X</h3>
+        </button>
+        <button class="key cKey">
+          <audio src="" id="sound9"></audio>
+          <h3>C</h3>
+        </button>
+      </div>
+      <div class="controls">
+        <div class="power">
+          <h3>Power:</h3>
+          <div class="on">ON</div>
+          <div class="off offColor">OFF</div>
+        </div>
+        <div class="soundName">Sound Name</div>
+        <div class="volume">
+          <input
+            type="range"
+            name="volume"
+            id="volumeSlider"
+            min="1"
+            max="100"
+            class="slider"
+          />
+          <p>Volume: <span id="Value"></span></p>
+        </div>
+        <div class="bank">
+          <h3>Bank:</h3>
+          <div class="bankOne bankOneColor">B1</div>
+          <div class="bankTwo">B2</div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
