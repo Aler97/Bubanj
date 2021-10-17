@@ -3,16 +3,27 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgb(13, 55, 146);
+}
 
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 80%;
+  gap: 50px;
+  width: 70%;
   margin: auto;
   border: 2px solid aqua;
-  padding: 20px;
+  padding: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  box-shadow: 0 0 20px aqua;
+  border-radius: 30px;
 }
 
 .keys {
@@ -23,14 +34,15 @@
 }
 
 .key {
-  width: 120px;
-  height: 120px;
+  width: 80px;
+  height: 80px;
   background-color: aliceblue;
   text-align: center;
   cursor: pointer;
   border: 1px solid aqua;
   color: blue;
   box-shadow: 0 0 10px aqua;
+  border-radius: 20px;
 }
 
 .key:hover {
@@ -71,7 +83,7 @@
 }
 
 .soundName {
-  width: 120px;
+  width: 150px;
   border: 1px solid aqua;
   align-self: center;
   padding: 10px 20px;
@@ -183,26 +195,13 @@
   background-color: rgb(28, 224, 61);
 }
 
-@media screen and (max-width: 818px) {
-  .container {
-    flex-direction: column;
-    gap: 50px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .key {
-    width: 80px;
-    height: 80px;
-    text-align: center;
-  }
-}
-
 @media screen and (min-width: 1050px) {
   .container {
     flex-direction: row;
     gap: 30px;
     justify-content: space-around;
     align-items: center;
+    height: 60%;
+    margin: auto;
   }
 }

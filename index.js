@@ -37,6 +37,9 @@ function isOff() {
     count = 2;
 }
 
+on.addEventListener("click", isOn);
+off.addEventListener("click", isOff);
+
 /* Bank One/Two */
 function bankNoTwo() {
     if (bankOne.classList.contains("bankOneColor")) {
@@ -54,8 +57,7 @@ function bankNoOne() {
     bank = 2;
 }
 
-on.addEventListener("click", isOn);
-off.addEventListener("click", isOff);
+
 bankOne.addEventListener("click", bankNoOne);
 bankTwo.addEventListener("click", bankNoTwo);
 
